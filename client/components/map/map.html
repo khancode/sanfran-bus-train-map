@@ -1,0 +1,29 @@
+
+<div id="login-container" ng-controller="mapController">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">San Francisco Bus & Train Locations</h3>
+        </div>
+        <div id="map-filter-container" class="panel-body">
+
+          <svg />
+
+          <div id="route-tag-filter-container">
+            <div id="select-routes-container">
+              <label for="select-routes">Select routes</label>
+              <select id="select-routes" ng-model="routeTagSelected" ng-change="onRouteTagSelect()" multiple>
+                <option value="All">Select All</option>
+                <option ng-repeat="rt in routeTags" value="{{rt.tag}}">{{rt.tag}}</option>
+              </select>
+            </div>
+
+            <div ng-repeat="rt in routeTagsSelected">
+              <div class="chip" style="color:{{routeColorMap[rt]}}">
+                <span>Route {{rt}}</span>
+                <span class="closebtn" ng-click="onChipClose(rt)">&times;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

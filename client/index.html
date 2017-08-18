@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angular-d3">
+<head>
+    <meta charset="UTF-8">
+    <title>San Francsico Real Time Bus & Train Map</title>
+    <!-- Angular -->
+    <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <!-- Angular Route -->
+    <script type="text/javascript" src="../node_modules/angular-route/angular-route.js"></script>
+    <!-- Angular UI Grid-->
+    <script type="text/javascript" src="../node_modules/angular-ui-grid/ui-grid.js"></script>
+    <link rel="stylesheet" type="text/css" href="../node_modules/angular-ui-grid/ui-grid.css" />
+    <!-- Bootstrap-->
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <!-- D3 -->
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="../node_modules/d3-tip/index.js"></script>
+
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+
+    <!-- App -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="components/map/mapController.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="components/map/map.css">
+</head>
+<body>
+
+    <div id="ng-view-container" ng-view></div>
+
+</body>
+</html>

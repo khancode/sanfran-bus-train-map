@@ -1,0 +1,20 @@
+{
+  "name": "san-francisco-bus-train-locations",
+  "version": "1.0.0",
+  "description": "Displaying a map of San Francisco with bus & locations using D3 with AngularJS",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-ui-grid": "^3.2.9",
+    "bootstrap": "^3.3.7",
+    "d3-tip": "^0.7.1",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omar Khan",
+  "license": "ISC"
+}

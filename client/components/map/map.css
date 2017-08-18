@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Josefin+Slab|Arvo|Lato|Vollkorn|Abril+Fatface|Old+Standard+TT|Droid+Sans|Lobster|Inconsolata|Montserrat|Playfair+Display|Karla|Alegreya|Libre+Baskerville|Merriweather|Lora|Archivo+Narrow|Neuton|Signika|Questrial|Fjalla+One|Bitter|Varela+Round);
+
+.background {
+  fill: #eee;
+  pointer-events: all;
+}
+
+.map-layer {
+  fill: #fff;
+  stroke: #aaa;
+}
+
+.effect-layer{
+  pointer-events:none;
+}
+
+text{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+text.big-text{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.effect-layer text, text.dummy-text{
+  font-size: 12px;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+#map-filter-container {
+  display: flex;
+}
+
+#route-tag-filter-container {
+  margin-left: 30px;
+}
+
+#select-routes-container {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  margin-right: 5px;
+}
+
+#select-routes {
+  width: 100px;
+  height: 150px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    margin-top: 10px;
+    height: 25px;
+    font-size: 18px;
+    /*line-height: 50px;*/
+    border-radius: 25px;
+    background-color: gray; //#f1f1f1;
+}
+
+.closebtn {
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 4px;
+}
+
+.closebtn:hover {
+    color: #000;
+}
